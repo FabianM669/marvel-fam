@@ -14,7 +14,7 @@
     "watch": "npm run watch:js & npm run watch:css",
     "build:js": "browserify src/js/main.js -t [ babelify --presets [ es2015 ] ] | uglifyjs > public/assets/bundle.js",
     "build:css": "sass src/scss/main.scss public/assets/main.css",
-    "postinstall": "cp node_modules/battlemanager/data/messages.js node_modules/battlemanager/js/battlemanager.js public/assets && cp node_modules/normalize.css/normalize.css src/scss/_normalize.scss"
+    "postinstall": "cp node_modules/battlemanager/data/messages.js node_modules/battlemanager/js/battlemanager.js public/assets && cp node_modules/normalize.css/normalize.css src/scss/_normalize.scss && npm run build"
   },
   "author": "",
   "license": "ISC",
