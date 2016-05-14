@@ -55,11 +55,10 @@ var BattleRouter = Backbone.Router.extend({
         dispatcher.trigger('show', new SingleHeroFullView({model:newModel}));
     },
 
-    battleNow: function (id1, id2,battleType) {
-
+    battleNow: function (id1, id2, battleType) {
         console.log('in battle Router');
-        dispatcher.trigger('show', 
-                new BattleSpaceView({   
+        dispatcher.trigger('show',
+                new BattleSpaceView({
                     model1: cache.getCharacter(utils.searchForId(id1)),
                     model2: cache.getCharacter(utils.searchForId(id2)),
                     type: battleType}));

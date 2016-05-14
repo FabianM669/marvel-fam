@@ -2,10 +2,10 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 var $ = require('jquery');
 var utils = require('../utils/utils.js');
-
-
 var HeroPickView = require('../heroPick/HeroPickView.js');
 var searchController = require('../heroPick/searchController.js');
+
+// This is the battle setup view
 
 var BattleSetupView = Backbone.View.extend({
 
